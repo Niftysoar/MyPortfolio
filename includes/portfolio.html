@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathéo Berthomé-Laurent | Web Developer & Smash Modder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        #vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .smash-icon {
+            transition: all 0.3s ease;
+        }
+        .smash-icon:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <div id="vanta-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-xl font-bold gradient-text">MBL</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-400 transition">Home</a>
+                        <a href="#projects" class="px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-400 transition">Projects</a>
+                        <a href="#smash" class="px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-400 transition">Smash Mods</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-400 transition">About</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-400 transition">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md hover:bg-gray-700 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Mathéo Berthomé-Laurent</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8">
+                Web Developer & <span class="text-indigo-400">Smash Modder</span>
+            </h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-gray-300">
+                I build beautiful, functional websites and create awesome Super Smash Bros. mods. 
+                Combining my passion for coding and gaming to deliver unique digital experiences.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md font-medium transition">View Projects</a>
+                <a href="#smash" class="px-6 py-3 border border-indigo-400 text-indigo-400 hover:bg-indigo-900 rounded-md font-medium transition">Smash Mods</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Web Development Projects</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-700 rounded-lg overflow-hidden shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-300 mb-4">A full-featured online store with React, Node.js, and MongoDB.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">React</span>
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            View Project <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-700 rounded-lg overflow-hidden shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/gaming/640x360/2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gaming Dashboard</h3>
+                        <p class="text-gray-300 mb-4">Interactive dashboard for tracking gaming statistics and achievements.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">Vue.js</span>
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">Firebase</span>
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">D3.js</span>
+                        </div>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            View Project <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-700 rounded-lg overflow-hidden shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/minimal/640x360/3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Portfolio Template</h3>
+                        <p class="text-gray-300 mb-4">Clean, responsive portfolio template for creative professionals.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">HTML/CSS</span>
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-gray-600 rounded text-xs">TailwindCSS</span>
+                        </div>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            View Project <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smash Mods Section -->
+    <section id="smash" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Super Smash Bros. Mods</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Smash Mod 1 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex items-start" data-aos="fade-right">
+                    <div class="mr-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-900 flex items-center justify-center smash-icon">
+                            <i data-feather="cpu" class="text-indigo-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Ultimate Balance Patch</h3>
+                        <p class="text-gray-300 mb-4">A comprehensive balance mod that tweaks character attributes to create a more competitive environment.</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i data-feather="download" class="mr-1 w-4 h-4"></i>
+                            <span>15,000+ downloads</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smash Mod 2 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex items-start" data-aos="fade-left">
+                    <div class="mr-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-900 flex items-center justify-center smash-icon">
+                            <i data-feather="image" class="text-indigo-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">HD Texture Pack</h3>
+                        <p class="text-gray-300 mb-4">High-resolution texture replacements for characters and stages, enhancing visual quality.</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i data-feather="download" class="mr-1 w-4 h-4"></i>
+                            <span>25,000+ downloads</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smash Mod 3 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex items-start" data-aos="fade-right">
+                    <div class="mr-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-900 flex items-center justify-center smash-icon">
+                            <i data-feather="users" class="text-indigo-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Community Character Pack</h3>
+                        <p class="text-gray-300 mb-4">Adds popular fan-requested characters to the roster with custom movesets.</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i data-feather="download" class="mr-1 w-4 h-4"></i>
+                            <span>50,000+ downloads</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smash Mod 4 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex items-start" data-aos="fade-left">
+                    <div class="mr-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-900 flex items-center justify-center smash-icon">
+                            <i data-feather="music" class="text-indigo-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Ultimate Music Mod</h3>
+                        <p class="text-gray-300 mb-4">Replaces in-game music with tracks from across the Nintendo universe.</p>
+                        <div class="flex items-center text-sm text-gray-400">
+                            <i data-feather="download" class="mr-1 w-4 h-4"></i>
+                            <span>35,000+ downloads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16" data-aos="fade-up">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-indigo-400 text-indigo-400 hover:bg-indigo-900 rounded-md font-medium transition">
+                    View All Mods <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/4" alt="Alex Carter" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        I'm a full-stack web developer with 5+ years of experience building modern web applications. 
+                        When I'm not coding, you'll find me modding Super Smash Bros. Ultimate, creating new characters, 
+                        stages, and gameplay mechanics for the community.
+                    </p>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3">Web Development Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">TailwindCSS</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">MongoDB</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Smash Modding Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Character Balancing</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Texture Editing</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Music Replacement</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Gameplay Tweaks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-xl overflow-hidden" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-indigo-900 p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4 text-left">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="mr-4 text-indigo-300 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-300">berthomath@hotmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="github" class="mr-4 text-indigo-300 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">GitHub</h4>
+                                    <p class="text-gray-300">https://github.com/Niftysoar</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="discord" class="mr-4 text-indigo-300 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Discord</h4>
+                                    <p class="text-gray-300">AlexMods#1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-300 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-indigo-400">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-indigo-400">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+                                <select id="subject" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-indigo-400">
+                                    <option value="web">Web Development</option>
+                                    <option value="smash">Smash Modding</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-300 mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-indigo-400"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md font-medium transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">Mathéo Berthomé-Laurent</span>
+                    <p class="text-gray-400 mt-1">Web Developer & Smash Modder</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
+                        <i data-feather="youtube"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition">
+                        <i data-feather="twitch"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2023 Mathéo Berthomé-Laurent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x5b21b6,
+            backgroundColor: 0x111827,
+            size: 0.8
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            feather.replace();
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
